@@ -1,4 +1,4 @@
-                                                               IMDB
+                                                            IMDB
                                                                     
                                                                     
 A simple Movie DB API consumption project using MVC with Coordinator where I try to show my knowledge with Swift.
