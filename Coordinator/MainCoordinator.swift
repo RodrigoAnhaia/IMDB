@@ -22,10 +22,10 @@ class MainCoordinator: Coordinator {
     }
     
     func showDetails(of movie: Movie, api: MovieAPI) {
-//        let vc = MoviesDetailsViewController.instantiate()
-//        vc.movie = movie
-//        vc.genresText = api.getGeneresText(of: movie)
-//        navigationController.pushViewController(vc, animated: true)
+        let vc = MovieDetailsViewController.instantiate()
+        vc.movie = movie
+        vc.genresText = api.getGeneresText(of: movie)
+        navigationController.pushViewController(vc, animated: true)
     }
     
     
