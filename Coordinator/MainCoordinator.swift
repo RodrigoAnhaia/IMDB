@@ -16,8 +16,9 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-//        let vc = MovieListViewController.instantiate()
-//        vc.coordinator = self
+        let vc = MovieListViewController.instantiate()
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: false)
     }
     
     func showDetails(of movie: Movie, api: MovieAPI) {

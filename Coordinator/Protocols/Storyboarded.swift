@@ -16,10 +16,10 @@ protocol Storyboarded {
 }
 
 extension Storyboarded where Self: UIViewController {
-    static func initialize() -> Self {
+    static func instantiate() -> Self {
         let id = String(describing: self)
         let storyboard = UIStoryboard(name: id, bundle: .main)
-        
+
         return storyboard.instantiateViewController(withIdentifier: id) as! Self
     }
 }
